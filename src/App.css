@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background-color: whitesmoke
+  background-color: whitesmoke;
 }
 
 nav {
@@ -17,9 +17,11 @@ nav {
   color: white;
   width: 60%;
 }
-nav h3{
+
+nav h3 {
   color: blue;
 }
+
 nav a {
   margin-top: 20px;
   text-decoration: none;
