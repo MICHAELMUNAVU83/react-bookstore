@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+.navbar {
+  background-color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  width: 60%;
+}
+
+nav h3 {
+  color: blue;
+}
+
+nav a {
+  margin-top: 20px;
+  text-decoration: none;
+  margin-right: 25%;
+  color: grey;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +54,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
