@@ -1,9 +1,12 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Form from './Form';
+import { deleteBook } from '../redux/books/books';
 
 function Book() {
   const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
   const rendereach = books.map((book) => (
     <div key={book.id}>
       <span>{book.title}</span>
@@ -11,7 +14,11 @@ function Book() {
       <span>by</span>
       {' '}
       <span>{book.author}</span>
-      <button type="button">DELETE</button>
+      <div>
+        <button onClick={() => { dispatch(deleteBook({ id: book.id })); }} id={book.id} type="button">
+          DELETE
+        </button>
+      </div>
     </div>
   ));
   return (
@@ -19,7 +26,6 @@ function Book() {
       {rendereach}
 
       <Form />
-
     </div>
   );
 }
