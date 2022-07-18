@@ -10,6 +10,7 @@ const categoriesSlice = createSlice(
       checkStatus(state) {
         state.push({
           title: 'under construction',
+          id: Date.now(),
         });
       },
     },
