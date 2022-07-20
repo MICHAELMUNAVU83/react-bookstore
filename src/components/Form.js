@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addBook } from "../redux/books/books";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/books';
 
 function Form() {
   const dispatch = useDispatch();
 
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
 
   const addaBook = () => {
     dispatch(
@@ -14,11 +14,11 @@ function Form() {
         title,
         author,
         id: Date.now(),
-      })
+      }),
     );
 
-    setTitle("");
-    setAuthor("");
+    setTitle('');
+    setAuthor('');
   };
   return (
     <div>
