@@ -21,7 +21,8 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className="bigform">
+      <hr />
       <div>
         <h3 className="addbookh3">ADD A NEW BOOK</h3>
       </div>

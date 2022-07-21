@@ -18,21 +18,18 @@ function Book() {
       <span>{book.title}</span>
       {' '}
       by
-      {' '}
       <span>{book.author}</span>
       <div>
         <button type="button" onClick={handle} id={book.id}>
           Delete
         </button>
       </div>
-
     </div>
   ));
 
   return (
     <div>
-      {render}
-
+      <div className="holdingbooks">{render}</div>
       <Form />
     </div>
   );
