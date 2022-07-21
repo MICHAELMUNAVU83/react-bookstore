@@ -1,13 +1,9 @@
 
 # Project Name
 
-
 REACT BOOKSTORE
 ## PROJECT DESCRIPTION
 THIS IS A BOOKSTORE BUILT USING REACT JS
-
-
-
 
 ## Built With
 -HTML
@@ -23,7 +19,6 @@ THIS IS A BOOKSTORE BUILT USING REACT JS
 
 👤 **MICHAEL MUNAVU'*
 =======
-👤 **Author1**
 
 
 - GitHub: [@githubhandle](https://github.com/MICHAELMUNAVU83)
