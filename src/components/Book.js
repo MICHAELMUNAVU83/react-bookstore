@@ -1,29 +1,31 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import Form from './Form';
-import { deleteBook } from '../redux/books/books';
+import Form from "./Form";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import {  getBooksApi, removeApi} from "../redux/books/book";
 
 function Book() {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getBooksApi())
 
-  const rendereach = books.map((book) => (
-    <div key={book.id}>
-      <span>{book.title}</span>
-      {' '}
-      <span>by</span>
-      {' '}
-      <span>{book.author}</span>
-      <div>
-        <button onClick={() => { dispatch(deleteBook({ id: book.id })); }} id={book.id} type="button">
-          DELETE
-        </button>
-      </div>
+  }, [dispatch])
+
+  const handle = (e) => {
+    dispatch(removeApi(e.target.id));
+  };
+  let render = books.map((book) => (
+    <div id={book.id} key={book.id}>
+      <p>{book.title}</p>
+      <button onClick={handle} id={book.id}>
+        Delete
+      </button>
     </div>
   ));
+
   return (
     <div>
-      {rendereach}
+      {render}
 
       <Form />
     </div>
