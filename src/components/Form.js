@@ -1,45 +1,41 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+
+import {useState} from "react"
+import {useDispatch} from "react-redux"
+import {addBooksApi, getBooksApi}  from "../redux/books/book"
 
 function Form() {
-  const dispatch = useDispatch();
+  const [title,setTitle]= useState('')
+  const [author,setAuthor]= useState('')
+  const dispatch = useDispatch()
+  
+  const onTitlechange = (e)=> setTitle(e.target.value)
+  const onTAuthorchange = (e)=> setAuthor(e.target.value)
+  const onSubmit =()=>{
+   
+    dispatch(addBooksApi({
+      title:title,
+      author:author,
+      id:Date.now()
+    }))
+    dispatch(getBooksApi())
+    setAuthor('')
+    setTitle('')
 
-  const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  }
 
-  const addaBook = () => {
-    dispatch(
-      addBook({
-        title,
-        author,
-        id: Date.now(),
-      }),
-    );
 
-    setTitle('');
-    setAuthor('');
-  };
   return (
     <div>
       <div>
         <h3>ADD A NEW BOOK</h3>
       </div>
       <div>
-        <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder="Book title"
-        />
-        <input
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-          placeholder="Author"
-        />
-        <button onClick={addaBook} type="button">
-          add book
-        </button>
+        <input placeholder="Book title" value={title} onChange ={onTitlechange} />
+        <input placeholder="Author"  value={author}  onChange ={onTAuthorchange}/>
+        <button onClick={onSubmit} type="button">add book</button>
+
       </div>
+
     </div>
   );
 }
