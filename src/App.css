@@ -131,7 +131,7 @@ span {
   height: 4.25rem;
   border-style: solid;
   border-width: 5px;
-  border-color:  #379cf6;
+  border-color: #379cf6;
   border-radius: 100%;
   border-image-slice: 1;
   -webkit-border-radius: 100%;
@@ -139,12 +139,13 @@ span {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
-.insidecircle{
+
+.insidecircle {
   width: 2.25rem;
   height: 2.25rem;
   border-style: solid;
   border-width: 30px;
-  border-color:  white;
+  border-color: white;
   border-bottom: 0;
   border-right: 0;
   position: absolute;
