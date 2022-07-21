@@ -130,18 +130,30 @@ span {
   width: 4.25rem;
   height: 4.25rem;
   border-style: solid;
-  border-color: #0290ff;
-  background-color: #0290ff;
-  margin-right: 5px;
   border-width: 5px;
+  border-color:  #379cf6;
   border-radius: 100%;
+  border-image-slice: 1;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
-  background-image:
-    linear-gradient(180deg, transparent 50%, #fafafa 50%),
-    linear-gradient(90deg, #fafafa 50%, transparent 50%);
+}
+.insidecircle{
+  width: 2.25rem;
+  height: 2.25rem;
+  border-style: solid;
+  border-width: 30px;
+  border-color:  white;
+  border-bottom: 0;
+  border-right: 0;
+  position: absolute;
+  border-radius: 100%;
+  margin-right: 20%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 .percentage {

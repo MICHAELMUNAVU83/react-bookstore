@@ -26,7 +26,9 @@ function Book() {
         <span>Edit</span>
       </div>
       <div className="percentage">
-        <p className="circle" />
+        <p className="circle">
+          <p className="insidecircle" />
+        </p>
         <div>
           <p className="percentNo">75%</p>
           <p>completed</p>
