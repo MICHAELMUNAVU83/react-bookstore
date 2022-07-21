@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Roboto+Mono:ital,wght@1,500&family=Roboto+Slab&display=swap');
+
 .App {
   text-align: center;
 }
@@ -27,7 +28,7 @@ nav a {
 }
 
 nav h3 {
- color: #0290ff;
+  color: #0290ff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -92,11 +93,12 @@ nav h3 {
   margin-left: 8%;
   color: gray;
 }
-.holdingbooks{
-  margin-top: 10px;
 
+.holdingbooks {
+  margin-top: 10px;
 }
-.divbook{
+
+.divbook {
   width: 60rem;
   height: 8.925rem;
   border-radius: 4px;
@@ -113,17 +115,18 @@ nav h3 {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-.bigform{
+
+.bigform {
   position: relative;
   bottom: 0;
-  
 }
-span{
+
+span {
   color: #0290ff;
   font-family: 'Crete Round', serif;
 }
 
-.circle{
+.circle {
   width: 4.25rem;
   height: 4.25rem;
   border-style: solid;
@@ -131,28 +134,30 @@ span{
   background-color: #0290ff;
   margin-right: 5px;
   border-width: 5px;
-  border-radius:100% ;
-  -webkit-border-radius:100% ;
-  -moz-border-radius:100% ;
-  -ms-border-radius:100% ;
-  -o-border-radius:100% ;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
   background-image:
-  linear-gradient(180deg, transparent 50%, #d1d1d1 50%),
-  linear-gradient(90deg, #d1d1d1 50%, transparent 50%);
+    linear-gradient(180deg, transparent 50%, #d1d1d1 50%),
+    linear-gradient(90deg, #d1d1d1 50%, transparent 50%);
+}
 
+.percentage {
+  display: flex;
+  flex-direction: row;
 }
-.percentage{
-    display: flex;
-    justify-content: row;
-}
-.deletebtn{
+
+.deletebtn {
   border: none;
   font-size: 18px;
   background-color: white;
   color: #0290ff;
   font-family: 'Crete Round', serif;
 }
-.update{
+
+.update {
   width: 11.5rem;
   height: 2.063rem;
   border: none;
@@ -161,17 +166,20 @@ span{
   background-color: #0290ff;
   color: white;
 }
-.authorname{
+
+.authorname {
   color: #0290ff;
 }
 
-.grayone{
+.grayone {
   color: gray;
-  font-family: 'Roboto Slab', serif
+  font-family: 'Roboto Slab', serif;
 }
-.percentNo{
+
+.percentNo {
   font-size: 20px;
 }
-.authortitle{
+
+.authortitle {
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
