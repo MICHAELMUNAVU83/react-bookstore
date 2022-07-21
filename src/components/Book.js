@@ -15,7 +15,7 @@ function Book() {
   };
   const render = books.map((book) => (
     <div className="divbook" id={book.id} key={book.id}>
-      <div>
+      <div className="everything">
         <p className="grayone">{book.category}</p>
         <p className="authortitle">{book.title}</p>
         <p className="authorname">{book.author}</p>
@@ -34,9 +34,9 @@ function Book() {
           <p>completed</p>
         </div>
       </div>
-      <div>
-        <p className="grayone">CURRENT CHAPTER</p>
-        <p>chapter 17</p>
+      <div className="currentchapter">
+        <p id="current-chap">CURRENT CHAPTER</p>
+        <p className="chapter">chapter 17</p>
         <button className="update" type="button">UPDATE PROGRESS</button>
       </div>
     </div>
