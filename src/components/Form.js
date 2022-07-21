@@ -23,7 +23,7 @@ function Form() {
   return (
     <div>
       <div>
-        <h3>ADD A NEW BOOK</h3>
+        <h3 className="addbookh3">ADD A NEW BOOK</h3>
       </div>
       <div className="formdiv">
         <input className="each-input" placeholder="Book title" value={title} onChange={onTitlechange} />
