@@ -8,16 +8,19 @@
   height: 40vmin;
   pointer-events: none;
 }
-.catslink{
+
+.catslink {
   margin-left: 20px;
 }
-.everything{
+
+.everything {
   margin-left: 70px;
 }
-.currentchapter{
-  margin-right: 50px;
 
+.currentchapter {
+  margin-right: 50px;
 }
+
 .navbar {
   background-color: whitesmoke;
 }
@@ -34,7 +37,8 @@ nav a {
   text-decoration: none;
   color: grey;
 }
-.icon{
+
+.icon {
   margin-left: 60%;
   font-size: 20px;
   margin-bottom: 10px;
@@ -48,14 +52,13 @@ nav h3 {
   margin-top: 19px;
   font-size: 17px;
   width: 100%;
-
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    -webkit-animation: App-logo-spin infinite 20s linear;
-}
+    -webkit-animation: app-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
@@ -80,7 +83,7 @@ nav h3 {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-}
+  }
 
   to {
     transform: rotate(360deg);
@@ -88,7 +91,7 @@ nav h3 {
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-}
+  }
 }
 
 .formdiv {
@@ -103,8 +106,6 @@ nav h3 {
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: var(--white);
-
-
 }
 
 .submitbtn {
@@ -115,7 +116,6 @@ nav h3 {
   color: white;
   text-align: center;
   border: none;
- 
 }
 
 .addbookh3 {
@@ -136,20 +136,18 @@ nav h3 {
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   display: flex;
-  margin-left:5% ;
+  margin-left: 5%;
   margin-top: 10px;
   padding-bottom: 5px;
   background-color: white;
   flex-direction: row;
   justify-content: space-between;
-  
 }
 
 .bigform {
   position: relative;
   bottom: 0;
 }
-
 
 span {
   color: #0290ff;
@@ -219,15 +217,15 @@ span {
   color: gray;
   font-family: 'Roboto Slab', serif;
   margin-right: 130%;
- 
 }
-.chapter{
+
+.chapter {
   margin-right: 43%;
 }
-#current-chap{
+
+#current-chap {
   color: gray;
   font-family: 'Roboto Slab', serif;
-
 }
 
 .percentNo {
