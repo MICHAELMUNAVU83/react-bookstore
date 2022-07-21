@@ -25,10 +25,10 @@ function Form() {
       <div>
         <h3>ADD A NEW BOOK</h3>
       </div>
-      <div>
-        <input placeholder="Book title" value={title} onChange={onTitlechange} />
-        <input placeholder="Author" value={author} onChange={onTAuthorchange} />
-        <button onClick={onSubmit} type="button">add book</button>
+      <div className="formdiv">
+        <input className="each-input" placeholder="Book title" value={title} onChange={onTitlechange} />
+        <input className="each-input" placeholder="Author" value={author} onChange={onTAuthorchange} />
+        <button className="submitbtn" onClick={onSubmit} type="button">add book</button>
 
       </div>
 
