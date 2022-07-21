@@ -15,24 +15,36 @@ function Book() {
   };
   const render = books.map((book) => (
     <div className="divbook" id={book.id} key={book.id}>
-      <span>{book.title}</span>
-      {' '}
-      by
-      {' '}
-      <span>{book.author}</span>
-      <div>
-        <button type="button" onClick={handle} id={book.id}>
-          Delete
-        </button>
+      <div className="everything">
+        <p className="grayone">{book.category}</p>
+        <p className="authortitle">{book.title}</p>
+        <p className="authorname">{book.author}</p>
+        <span>Comments</span>
+        |
+        <span><button className="deletebtn" type="button" id={book.id} onClick={handle}>Remove</button></span>
+        |
+        <span>Edit</span>
       </div>
-
+      <div className="percentage">
+        <p className="circle">
+          <p className="insidecircle" />
+        </p>
+        <div>
+          <p className="percentNo">75%</p>
+          <p>completed</p>
+        </div>
+      </div>
+      <div className="currentchapter">
+        <p id="current-chap">CURRENT CHAPTER</p>
+        <p className="chapter">chapter 17</p>
+        <button className="update" type="button">UPDATE PROGRESS</button>
+      </div>
     </div>
   ));
 
   return (
     <div>
-      {render}
-
+      <div className="holdingbooks">{render}</div>
       <Form />
     </div>
   );
